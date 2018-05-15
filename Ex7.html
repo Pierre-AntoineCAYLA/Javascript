@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Ex7</title>
+		<meta charset="utf8"/>
+		<link rel="stylesheet" media="screen" href="todo_list.css" />
+	</head>
+	
+	<header>
+		<h1>Ex7</h1>
+	</header>
+	
+	<body onload="loading()">
+	<script type="text/javascript">	
+	
+			function ajouter(){			
+			var tache = document.createElement("li"); 
+			tache.onclick=suppression;
+			var parent = document.getElementById("todolist");
+			var text = document.createTextNode(document.getElementById("todotxt").value); 
+			tache.appendChild(text); 
+			parent.appendChild(tache);
+			}	
+
+			function suppression(){
+			supprimer=confirm("êtes-vous sur ?");
+			if (supprimer===true){
+			var parent = document.getElementById("todolist");
+				parent.removeChild(this);
+			}
+			
+			}
+		</script>
+		
+		<div class="content">
+			<h1>TODO List</h1>
+			<ul id="todolist">
+			</ul>
+			<input id="todotxt" type="text" />
+			<button onclick='ajouter()' id="addtodo" type="button">Ajouter</button>
+		</div>
+		
+		
+		
+	</body>
+</html>
