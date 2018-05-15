@@ -15,15 +15,15 @@
 	var xhttp = new XMLHttpRequest();	
 	function afterResultLoad() {
 	var jsonObjectArray=JSON.parse(xhttp.responseText);
-	JsonObjectArray.foreach(fuction(item){
-	document.getElementById("test").innerHTML +=item.name+"</br>";
+	jsonObjectArray.forEach(function(item){
+	document.getElementById("test").innerHTML +=item.id+"</br>";
 	});
+	}
 	
-	function callWebService(){
 	xhttp.onload=afterResultLoad;
 	xhttp.onload = afterResultLoad;
-	xhttp.open("GET","http://loisirs-web-backend.cleverapps.io/users/1",true);
-	xhttp.send();}
+	xhttp.open("GET","http://loisirs-web-backend.cleverapps.io/users",true);
+	xhttp.send();
 	console.log(xhttp);		
 		</script>
 	
