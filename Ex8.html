@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Ex8</title>
+		<meta charset="utf8"/>
+	</head>
+	
+	<header>
+		<h1>Ex8</h1>
+	</header>
+	
+	<body id="test">
+	
+	<script type="text/javascript">	
+	var xhttp = new XMLHttpRequest();	
+	function afterResultLoad() {
+	var jsonObjectArray=JSON.parse(xhttp.responseText);
+	JsonObjectArray.foreach(fuction(item){
+	document.getElementById("test").innerHTML +=item.name+"</br>";
+	});
+	
+	function callWebService(){
+	xhttp.onload=afterResultLoad;
+	xhttp.onload = afterResultLoad;
+	xhttp.open("GET","http://loisirs-web-backend.cleverapps.io/users/1",true);
+	xhttp.send();}
+	console.log(xhttp);		
+		</script>
+	
+	
+		
+		
+		
+	</body>
+</html>
