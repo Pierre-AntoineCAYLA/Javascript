@@ -18,14 +18,14 @@
 			function Moyenne(notes){
 			var val=0;
 				for(i=0;i<notes.length;i++){				
-					val=val+notes[i];}
+					val=val+notes[i];
+					}
 					val=val/notes.length;
 				return val;}
 				
-			moyenne=Moyenne(notes)*100;
-			moyenne=Math.round(moyenne);
-			moyenne=moyenne/100;
-			document.write("la moyenne est de ", moyenne);
+			moyenne=Moyenne(notes);
+			moyenne=Math.round(moyenne*100)/100;
+			document.write("La moyenne est de ", moyenne);
 		</script>
 	</body>
 </html>
