@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="UTF-8"/>
+		<title>Ex4</title>
+	</head>
+	
+	<header>
+		<h1>Ex4</h1>
+	</header>
+	
+	<body>
+		<label for="prenom">prenom :</label>
+		<input type="prenom" name="prenom" id="prenom" autofocus required>
+		
+		<script type="text/javascript">
+			var i;
+			var age={
+			"anatole":19,
+			"bernard":45,
+			"christophe":55,
+			"dominique":55,
+			"franck":28,
+			"georges":78,
+			"lucas":12,
+			"madeleine":30,
+			"pierre":25}
+			
+			function detect(){			
+				prenom=document.getElementById("prenom").value;
+				if(typeof(age[prenom])=== "undefined"){
+				alert(prenom+ " n'est pas trouvé");}
+				else{
+				prenomModifie=prenom.charAt(0).toUpperCase()+prenom.substring(1);
+				alert(prenomModifie+" a "+age[prenom]+" ans");}
+				}				
+		</script>
+		<button onclick='detect()'>Quel age as-tu ?</button>
+	</body>
+</html>
