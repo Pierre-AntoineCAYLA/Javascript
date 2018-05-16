@@ -1,9 +1,26 @@
 @keyframes color{
-	from{background-color:red;
+	0%{background-color:red;
 	transform:rotate(0deg);}
-	to{background-color:blue;
+	10%{background-color:blue;
 	transform:rotate(3600deg);}
-
+	20%{background-color:red;
+	transform:rotate(0deg);}
+	30%{background-color:blue;
+	transform:rotate(3600deg);}
+	40%{background-color:red;
+	transform:rotate(0deg);}
+	50%{background-color:blue;
+	transform:rotate(3600deg);}
+	60%{background-color:red;
+	transform:rotate(0deg);}
+	70%{background-color:blue;
+	transform:rotate(3600deg);}
+	80%{background-color:red;
+	transform:rotate(0deg);}
+	90%{background-color:blue;
+	transform:rotate(3600deg);}
+	100%{background-color:red;
+	transform:rotate(0deg);}
 }
 .div1{
 	width:100px;
