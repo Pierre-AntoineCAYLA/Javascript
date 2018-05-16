@@ -1,0 +1,24 @@
+@keyframes color{
+	from{background-color:red;
+	transform:rotate(0deg);}
+	to{background-color:blue;
+	transform:rotate(3600deg);}
+
+}
+.div1{
+	width:100px;
+	height:100px;
+	background-color:red;
+	animation-name:color;
+	animation-duration:10s;
+	
+}
+
+.div1:hover{
+	width:300px
+}
+	
+
+
+}
+
