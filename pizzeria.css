@@ -28,15 +28,10 @@ body > nav > ul > li>a {
 }
 
 body > nav > ul > li:hover {
-	background-color: #009900;
-	width: 50%;
-	text-align: left;
-	margin-left: 20px;
-	margin-top: 10px;
-	padding: 10px;
-	border: #660000 solid 1px;
-	list-style-type:none;
-	display:inline;}
+	background-color: #009900;}
+	
+	body > nav > ul > li:visited {
+	background-color: #009900;}
 
 h1{
 	color:#C03000;
@@ -49,4 +44,6 @@ h2{
 body>footer>p>a{
 	color:0000FF;
 	text-decoration:none;}
+	
+
 
